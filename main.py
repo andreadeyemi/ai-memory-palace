@@ -16,13 +16,14 @@ def main():
     search_parser = subparsers.add_parser("search", help="Search memory")
     search_parser.add_argument("query", type=str, help="Query to search in memory")
     search_parser.add_argument("--top_k", type=int, default=3, help="Number of results to show")
+    search_parser.add_argument("--summarize", action="store_true", help="Summarize results using GPT")
 
     args = parser.parse_args()
 
     if args.command == "save":
         save_memory(args.thought)
     elif args.command == "search":
-        search_memory(args.query, top_k=args.top_k)
+        search_memory(args.query, top_k=args.top_k, summarize=args.summarize)
     else:
         parser.print_help()
 
