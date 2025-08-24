@@ -67,7 +67,7 @@ Copy
 Edit
 Thought → [Embedder] → [Vector Vault] → 🧠
                         ↑
-        [GPT: Tag + Summarize]
+[GPT: Tag + Summarize]
 🔍 Why This Over a Notes App?
 Feature	Notes App	AI Memory Palace
 Keyword search only	✅	✅
